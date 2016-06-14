@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3284DD91D10B94200C262F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DD81D10B94200C262F3 /* AppDelegate.swift */; };
+		D3284DDB1D10B94200C262F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DDA1D10B94200C262F3 /* ViewController.swift */; };
+		D3284DDE1D10B94200C262F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3284DDC1D10B94200C262F3 /* Main.storyboard */; };
+		D3284DE01D10B94200C262F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3284DDF1D10B94200C262F3 /* Assets.xcassets */; };
+		D3284DE31D10B94200C262F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3284DE11D10B94200C262F3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3284DD51D10B94200C262F3 /* ShivanisBachelorette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShivanisBachelorette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3284DD81D10B94200C262F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3284DDA1D10B94200C262F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3284DDD1D10B94200C262F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3284DDF1D10B94200C262F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3284DE21D10B94200C262F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3284DE41D10B94200C262F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3284DD21D10B94200C262F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3284DCC1D10B94200C262F3 = {
+			isa = PBXGroup;
+			children = (
+				D3284DD71D10B94200C262F3 /* ShivanisBachelorette */,
+				D3284DD61D10B94200C262F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3284DD61D10B94200C262F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3284DD51D10B94200C262F3 /* ShivanisBachelorette.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3284DD71D10B94200C262F3 /* ShivanisBachelorette */ = {
+			isa = PBXGroup;
+			children = (
+				D3284DD81D10B94200C262F3 /* AppDelegate.swift */,
+				D3284DDA1D10B94200C262F3 /* ViewController.swift */,
+				D3284DDC1D10B94200C262F3 /* Main.storyboard */,
+				D3284DDF1D10B94200C262F3 /* Assets.xcassets */,
+				D3284DE11D10B94200C262F3 /* LaunchScreen.storyboard */,
+				D3284DE41D10B94200C262F3 /* Info.plist */,
+			);
+			path = ShivanisBachelorette;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3284DD41D10B94200C262F3 /* ShivanisBachelorette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3284DE71D10B94200C262F3 /* Build configuration list for PBXNativeTarget "ShivanisBachelorette" */;
+			buildPhases = (
+				D3284DD11D10B94200C262F3 /* Sources */,
+				D3284DD21D10B94200C262F3 /* Frameworks */,
+				D3284DD31D10B94200C262F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShivanisBachelorette;
+			productName = ShivanisBachelorette;
+			productReference = D3284DD51D10B94200C262F3 /* ShivanisBachelorette.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3284DCD1D10B94200C262F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Vandita Sharma";
+				TargetAttributes = {
+					D3284DD41D10B94200C262F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D3284DD01D10B94200C262F3 /* Build configuration list for PBXProject "ShivanisBachelorette" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3284DCC1D10B94200C262F3;
+			productRefGroup = D3284DD61D10B94200C262F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3284DD41D10B94200C262F3 /* ShivanisBachelorette */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3284DD31D10B94200C262F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3284DE31D10B94200C262F3 /* LaunchScreen.storyboard in Resources */,
+				D3284DE01D10B94200C262F3 /* Assets.xcassets in Resources */,
+				D3284DDE1D10B94200C262F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3284DD11D10B94200C262F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3284DDB1D10B94200C262F3 /* ViewController.swift in Sources */,
+				D3284DD91D10B94200C262F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3284DDC1D10B94200C262F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3284DDD1D10B94200C262F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3284DE11D10B94200C262F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3284DE21D10B94200C262F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3284DE51D10B94200C262F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3284DE61D10B94200C262F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3284DE81D10B94200C262F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShivanisBachelorette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evilmcdeets.ShivanisBachelorette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3284DE91D10B94200C262F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShivanisBachelorette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evilmcdeets.ShivanisBachelorette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3284DD01D10B94200C262F3 /* Build configuration list for PBXProject "ShivanisBachelorette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3284DE51D10B94200C262F3 /* Debug */,
+				D3284DE61D10B94200C262F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3284DE71D10B94200C262F3 /* Build configuration list for PBXNativeTarget "ShivanisBachelorette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3284DE81D10B94200C262F3 /* Debug */,
+				D3284DE91D10B94200C262F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3284DCD1D10B94200C262F3 /* Project object */;
+}
