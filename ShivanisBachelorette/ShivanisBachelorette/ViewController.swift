@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonPressed(sender: AnyObject) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let viewController  = storyboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 
 }
-

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aGf-dh-ixq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="ShivanisBachelorette" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,122 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kok-pX-Vu3">
+                                <rect key="frame" x="20" y="238" width="560" height="124"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1897941_832545683428330_1179236264_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pJm-JF-vul">
+                                        <rect key="frame" x="245" y="8" width="71" height="60"/>
+                                        <color key="backgroundColor" red="0.18083342190000001" green="0.98355693720000004" blue="0.95269863450000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="C71-dz-tYf"/>
+                                            <constraint firstAttribute="height" constant="60" id="MTW-fh-klj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shivani'sBachelorette" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSA-8E-a7J">
+                                        <rect key="frame" x="123" y="76" width="314" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pJm-JF-vul" firstAttribute="top" secondItem="Kok-pX-Vu3" secondAttribute="top" constant="8" id="39g-m6-pSV"/>
+                                    <constraint firstItem="VSA-8E-a7J" firstAttribute="centerX" secondItem="pJm-JF-vul" secondAttribute="centerX" id="FWe-wz-DSi"/>
+                                    <constraint firstAttribute="bottom" secondItem="VSA-8E-a7J" secondAttribute="bottom" constant="8" id="pSq-9B-Ve7"/>
+                                    <constraint firstItem="pJm-JF-vul" firstAttribute="centerX" secondItem="Kok-pX-Vu3" secondAttribute="centerX" id="q4h-wY-gxk"/>
+                                    <constraint firstItem="VSA-8E-a7J" firstAttribute="top" secondItem="pJm-JF-vul" secondAttribute="bottom" constant="8" id="qb4-io-m0k"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaD-UD-sPZ" customClass="StepV">
+                                <rect key="frame" x="283" y="470" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3e-Ra-1v8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AaD-UD-sPZ" secondAttribute="bottom" constant="100" id="BtJ-Gg-fbm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kok-pX-Vu3" secondAttribute="trailing" id="MgA-t8-fuq"/>
+                            <constraint firstItem="AaD-UD-sPZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQw-Iq-nMH"/>
+                            <constraint firstItem="Kok-pX-Vu3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sir-Jk-6n1"/>
+                            <constraint firstItem="Kok-pX-Vu3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zVC-Ot-AwT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="L54-rE-WEm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="quS-3H-oc5">
+            <objects>
+                <viewController storyboardIdentifier="StepViewController" id="cuM-OO-chK" customClass="StepViewController" customModule="ShivanisBachelorette" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bMa-ng-yM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="7pM-MI-cv4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uqj-ho-LSj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYu-yF-pcw">
+                                <rect key="frame" x="20" y="94" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="tsS-XR-fMK" kind="show" id="4Mw-YQ-rkB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGE-AV-stU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sWl-hd-V9F">
+            <objects>
+                <viewController id="tsS-XR-fMK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vGS-VV-PgA"/>
+                        <viewControllerLayoutGuide type="bottom" id="v52-BD-Z5I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cGr-GL-XsU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UaG-lp-fV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NdC-rD-ONa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aGf-dh-ixq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SSV-w3-qOf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iuo-yA-hFF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asv-Ju-t6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1897941_832545683428330_1179236264_n.jpg" width="640" height="425"/>
+    </resources>
 </document>
