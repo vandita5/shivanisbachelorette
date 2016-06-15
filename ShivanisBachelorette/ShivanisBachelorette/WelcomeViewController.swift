@@ -19,7 +19,11 @@ class WelcomeViewController: UIViewController {
     @IBAction func startPressed(sender: AnyObject) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let firstStepViewController = storyboard.instantiateViewControllerWithIdentifier("StepViewController") as! StepViewController
+        firstStepViewController.step = 1
         navigationController?.pushViewController(firstStepViewController, animated: true)
     }
 
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        <#code#>
+//    }
 }

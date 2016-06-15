@@ -10,11 +10,14 @@ import UIKit
 
 class StepViewController: UIViewController {
 
+    @IBOutlet weak var stepNumberLabel: UILabel!
+    var step: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        stepNumberLabel.text = "\(step)"
     }
-
+    
+    
 
 }
