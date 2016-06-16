@@ -26,16 +26,28 @@ class StepViewController: UIViewController {
     }
     
     func nextStep() -> Step {
+        
         if step.number == 1 {
-            return Step(number: 2, text: "Go to the airport by 1730 hrs. American Airlines departure terminal.", nextButtonText: "At the airport!")
+            let dateNow = NSDate()
+            let components: NSDateComponents = NSDateComponents()
+            components.setValue(2016, forComponent: NSCalendarUnit.Year)
+            components.setValue(7, forComponent: NSCalendarUnit.Month)
+            components.setValue(1, forComponent: NSCalendarUnit.Day)
+            let expirationDate = NSCalendar.currentCalendar().dateFromComponents(components)
+            if NSCalendar.currentCalendar().compareDate(dateNow, toDate: expirationDate!, toUnitGranularity: .Day) == .OrderedSame {
+                return Step(number: 2, text: "Go to the airport by 1730 hrs. American Airlines departure terminal.", nextButtonText: "At the airport!")
+            } else {
+                return Step(number: 1, text: "Haha!", nextButtonText: "It's Friday now!")
+            }
+
         } else if step.number == 2 {
-            return Step(number: 3, text: "Post “Green Cats are super cute!” to facebook.", nextButtonText: "Next")
+            return Step(number: 3, text: "Post “Green Cats are super cute!” to facebook.", nextButtonText: "Done!")
         } else if step.number == 3 {
-            return Step(number: 4, text: "Print your boarding pass and head to your gate. Confirmation ID: OINKQD", nextButtonText: "Next")
+            return Step(number: 4, text: "Print your boarding pass and head to your gate. Confirmation ID: OINKQD", nextButtonText: "In the flight!")
         } else if step.number == 4 {
-            return Step(number: 5, text: "Take an in-flight selfie and post it on instagram. ", nextButtonText: "Next")
+            return Step(number: 5, text: "Take an in-flight selfie and post it on instagram. ", nextButtonText: "Done!")
         } else if step.number == 5 {
-            return Step(number: 6, text: "Run to Hertz Car Rental office  and get your ride.", nextButtonText: "Next")
+            return Step(number: 6, text: "Run to Hertz Car Rental office  and get your ride.", nextButtonText: "Ready to go!")
         }else {
             preconditionFailure("Invalid Step Number")
         }

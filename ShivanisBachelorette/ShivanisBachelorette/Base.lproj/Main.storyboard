@@ -57,18 +57,27 @@
                                     <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XTJ-BA-HuM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="#LastFlingBeforeTheRing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbw-jx-9O8">
+                                <rect key="frame" x="117" y="546" width="366" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TKQ-p6-GC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AHt-ud-0SE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TKQ-p6-GC4" secondAttribute="bottom" constant="100" id="Ked-cK-bjf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Kok-pX-Vu3" secondAttribute="trailing" id="MgA-t8-fuq"/>
+                            <constraint firstItem="zbw-jx-9O8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bNT-5s-r49"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zbw-jx-9O8" secondAttribute="bottom" constant="14" id="rsV-ZT-Mbf"/>
                             <constraint firstItem="Kok-pX-Vu3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sir-Jk-6n1"/>
                             <constraint firstItem="Kok-pX-Vu3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zVC-Ot-AwT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="L54-rE-WEm"/>
                     <connections>
+                        <outlet property="bottomTextView" destination="zbw-jx-9O8" id="rrL-uh-IHW"/>
                         <outlet property="startButton" destination="TKQ-p6-GC4" id="NZm-IP-6ex"/>
                     </connections>
                 </viewController>
@@ -105,7 +114,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" placeholder="YES" id="fmu-tr-mv7"/>
                                         </constraints>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
