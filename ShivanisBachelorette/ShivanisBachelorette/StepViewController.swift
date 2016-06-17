@@ -62,7 +62,7 @@ class StepViewController: UIViewController {
 
     @IBAction func buttonPressed(sender: AnyObject) {
         guard let nextStep = nextStep() else {
-            print("Not Allowed")
+            cheatScreens()
             return
         }
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
@@ -70,4 +70,15 @@ class StepViewController: UIViewController {
         nextStepViewController.step = nextStep
         navigationController?.pushViewController(nextStepViewController, animated: true)
     }
+    
+    func cheatScreens() {
+//        let alertController = UIAlertController(title: "NO", message: "Dont", preferredStyle: UIAlertControllerStyle.Alert)
+//        let ok = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil)
+//        alertController.addAction(ok)
+//        presentViewController(alertController, animated: true, completion: nil)
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let cheatScreenViewController = storyboard.instantiateViewControllerWithIdentifier("CheatScreenViewController") as! CheatScreenViewController
+        navigationController?.pushViewController(cheatScreenViewController, animated: true)
+    }
+    
 }

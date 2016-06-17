@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,18 +20,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kok-pX-Vu3">
-                                <rect key="frame" x="20" y="238" width="560" height="124"/>
+                                <rect key="frame" x="20" y="168" width="560" height="264"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomePhoto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pJm-JF-vul">
-                                        <rect key="frame" x="245" y="8" width="71" height="60"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomePhoto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pJm-JF-vul">
+                                        <rect key="frame" x="180" y="8" width="200" height="200"/>
                                         <color key="backgroundColor" red="0.18083342190000001" green="0.98355693720000004" blue="0.95269863450000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="71" id="C71-dz-tYf"/>
-                                            <constraint firstAttribute="height" constant="60" id="MTW-fh-klj"/>
+                                            <constraint firstAttribute="width" secondItem="pJm-JF-vul" secondAttribute="height" multiplier="1:1" id="Eht-WW-4t1"/>
+                                            <constraint firstAttribute="height" constant="200" id="MTW-fh-klj"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shivani'sBachelorette" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSA-8E-a7J">
-                                        <rect key="frame" x="123" y="76" width="314" height="40"/>
+                                        <rect key="frame" x="123" y="216" width="314" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -159,6 +165,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTi-5Z-ZyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1754" y="429"/>
+        </scene>
+        <!--Cheat Screen View Controller-->
+        <scene sceneID="oNV-9Q-uJa">
+            <objects>
+                <viewController storyboardIdentifier="CheatScreenViewController" id="brr-ae-Wp0" customClass="CheatScreenViewController" customModule="ShivanisBachelorette" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r9X-4O-Xgo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mmg-1P-FST"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QBN-YF-scy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlG-lZ-x5u">
+                                <rect key="frame" x="225" y="470" width="150" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.16775150180000001" blue="0.1740051269" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="&gt;.&lt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButtonPressed:" destination="brr-ae-Wp0" eventType="touchUpInside" id="8aA-G7-e19"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQk-ba-xG1">
+                                <rect key="frame" x="51" y="53" width="498" height="288"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LdT-sx-hhD">
+                                        <rect key="frame" x="85" y="8" width="322" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="PcN-QD-7LL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You’ve been caught cheating. Go to the corner and think about what you’ve done!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-wh-nOl">
+                                        <rect key="frame" x="85" y="201" width="322" height="66"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Dbq-wh-nOl" firstAttribute="centerX" secondItem="LdT-sx-hhD" secondAttribute="centerX" id="4R6-Xc-0Ua"/>
+                                    <constraint firstItem="LdT-sx-hhD" firstAttribute="top" secondItem="GQk-ba-xG1" secondAttribute="top" constant="8" id="FrP-cI-ylv"/>
+                                    <constraint firstItem="LdT-sx-hhD" firstAttribute="leading" secondItem="GQk-ba-xG1" secondAttribute="leading" constant="85" id="HF6-LJ-qPR"/>
+                                    <constraint firstAttribute="trailing" secondItem="LdT-sx-hhD" secondAttribute="trailing" constant="91" id="Ix7-9U-euQ"/>
+                                    <constraint firstItem="Dbq-wh-nOl" firstAttribute="leading" secondItem="LdT-sx-hhD" secondAttribute="leading" id="SLQ-Ls-iet"/>
+                                    <constraint firstItem="Dbq-wh-nOl" firstAttribute="top" secondItem="LdT-sx-hhD" secondAttribute="bottom" constant="13" id="X12-bC-5lA"/>
+                                    <constraint firstAttribute="height" constant="288" id="YSb-0V-QC6"/>
+                                    <constraint firstItem="Dbq-wh-nOl" firstAttribute="trailing" secondItem="LdT-sx-hhD" secondAttribute="trailing" id="csr-uZ-EAc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dbq-wh-nOl" secondAttribute="bottom" constant="21" id="fyv-iA-Gob"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GQk-ba-xG1" secondAttribute="trailing" constant="31" id="29L-yU-qYk"/>
+                            <constraint firstItem="GQk-ba-xG1" firstAttribute="top" secondItem="r9X-4O-Xgo" secondAttribute="bottom" constant="33" id="HJB-4K-qOe"/>
+                            <constraint firstItem="GQk-ba-xG1" firstAttribute="leading" secondItem="QBN-YF-scy" secondAttribute="leadingMargin" constant="31" id="PWz-0v-LKK"/>
+                            <constraint firstItem="HlG-lZ-x5u" firstAttribute="centerX" secondItem="QBN-YF-scy" secondAttribute="centerX" id="ZqQ-Tc-7bB"/>
+                            <constraint firstItem="Mmg-1P-FST" firstAttribute="top" secondItem="HlG-lZ-x5u" secondAttribute="bottom" constant="100" id="eZT-QZ-8Tn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="HlG-lZ-x5u" id="6ar-CC-7Cy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xT-s7-EaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2391" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NdC-rD-ONa">
