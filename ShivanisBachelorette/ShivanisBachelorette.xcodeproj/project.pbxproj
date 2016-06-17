@@ -16,6 +16,7 @@
 		D3284DED1D10BDC300C262F3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DEC1D10BDC300C262F3 /* WelcomeViewController.swift */; };
 		D3284DEF1D1189C400C262F3 /* welcomePhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D3284DEE1D1189C400C262F3 /* welcomePhoto.jpg */; };
 		D3284DF11D120FC900C262F3 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DF01D120FC900C262F3 /* Step.swift */; };
+		D3284DF31D134B3800C262F3 /* LocationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DF21D134B3800C262F3 /* LocationClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D3284DEC1D10BDC300C262F3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D3284DEE1D1189C400C262F3 /* welcomePhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcomePhoto.jpg; sourceTree = "<group>"; };
 		D3284DF01D120FC900C262F3 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		D3284DF21D134B3800C262F3 /* LocationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				D3284DEA1D10BD4700C262F3 /* StepViewController.swift */,
 				D3284DEC1D10BDC300C262F3 /* WelcomeViewController.swift */,
 				D3284DF01D120FC900C262F3 /* Step.swift */,
+				D3284DF21D134B3800C262F3 /* LocationClient.swift */,
 			);
 			path = ShivanisBachelorette;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3284DDB1D10B94200C262F3 /* ViewController.swift in Sources */,
+				D3284DF31D134B3800C262F3 /* LocationClient.swift in Sources */,
 				D3284DED1D10BDC300C262F3 /* WelcomeViewController.swift in Sources */,
 				D3284DF11D120FC900C262F3 /* Step.swift in Sources */,
 				D3284DD91D10B94200C262F3 /* AppDelegate.swift in Sources */,
@@ -304,6 +308,7 @@
 				D3284DE91D10B94200C262F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
