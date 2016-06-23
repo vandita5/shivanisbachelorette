@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D303F0E91D1CA3D200C1EA95 /* myrtlebeach.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D303F0E81D1CA3D200C1EA95 /* myrtlebeach.gpx */; };
+		D303F0EB1D1CA48000C1EA95 /* myrtlebeach (1).gpx in Resources */ = {isa = PBXBuildFile; fileRef = D303F0EA1D1CA48000C1EA95 /* myrtlebeach (1).gpx */; };
+		D303F0EF1D1CA63300C1EA95 /* cheat1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D303F0EE1D1CA63300C1EA95 /* cheat1.jpeg */; };
 		D3284DD91D10B94200C262F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DD81D10B94200C262F3 /* AppDelegate.swift */; };
 		D3284DDB1D10B94200C262F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DDA1D10B94200C262F3 /* ViewController.swift */; };
 		D3284DDE1D10B94200C262F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3284DDC1D10B94200C262F3 /* Main.storyboard */; };
@@ -18,9 +21,15 @@
 		D3284DF11D120FC900C262F3 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DF01D120FC900C262F3 /* Step.swift */; };
 		D3284DF31D134B3800C262F3 /* LocationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DF21D134B3800C262F3 /* LocationClient.swift */; };
 		D3284DF71D138EA200C262F3 /* CheatScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284DF61D138EA200C262F3 /* CheatScreenViewController.swift */; };
+		D38E59D91D1B454500E22B77 /* shivi_cheat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D38E59D81D1B454500E22B77 /* shivi_cheat.jpg */; };
+		D38E59DB1D1B673700E22B77 /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38E59DA1D1B673700E22B77 /* ExitViewController.swift */; };
+		D38E59DF1D1B6D6100E22B77 /* cya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D38E59DE1D1B6D6100E22B77 /* cya.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D303F0E81D1CA3D200C1EA95 /* myrtlebeach.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myrtlebeach.gpx; sourceTree = "<group>"; };
+		D303F0EA1D1CA48000C1EA95 /* myrtlebeach (1).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "myrtlebeach (1).gpx"; sourceTree = "<group>"; };
+		D303F0EE1D1CA63300C1EA95 /* cheat1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cheat1.jpeg; sourceTree = "<group>"; };
 		D3284DD51D10B94200C262F3 /* ShivanisBachelorette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShivanisBachelorette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3284DD81D10B94200C262F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3284DDA1D10B94200C262F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +43,9 @@
 		D3284DF01D120FC900C262F3 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		D3284DF21D134B3800C262F3 /* LocationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationClient.swift; sourceTree = "<group>"; };
 		D3284DF61D138EA200C262F3 /* CheatScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheatScreenViewController.swift; sourceTree = "<group>"; };
+		D38E59D81D1B454500E22B77 /* shivi_cheat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shivi_cheat.jpg; sourceTree = "<group>"; };
+		D38E59DA1D1B673700E22B77 /* ExitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitViewController.swift; sourceTree = "<group>"; };
+		D38E59DE1D1B6D6100E22B77 /* cya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cya.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +62,8 @@
 		D3284DCC1D10B94200C262F3 = {
 			isa = PBXGroup;
 			children = (
+				D303F0EA1D1CA48000C1EA95 /* myrtlebeach (1).gpx */,
+				D303F0E81D1CA3D200C1EA95 /* myrtlebeach.gpx */,
 				D3284DD71D10B94200C262F3 /* ShivanisBachelorette */,
 				D3284DD61D10B94200C262F3 /* Products */,
 			);
@@ -75,9 +89,13 @@
 				D3284DE41D10B94200C262F3 /* Info.plist */,
 				D3284DEA1D10BD4700C262F3 /* StepViewController.swift */,
 				D3284DEC1D10BDC300C262F3 /* WelcomeViewController.swift */,
+				D303F0EE1D1CA63300C1EA95 /* cheat1.jpeg */,
 				D3284DF01D120FC900C262F3 /* Step.swift */,
+				D38E59D81D1B454500E22B77 /* shivi_cheat.jpg */,
 				D3284DF21D134B3800C262F3 /* LocationClient.swift */,
 				D3284DF61D138EA200C262F3 /* CheatScreenViewController.swift */,
+				D38E59DE1D1B6D6100E22B77 /* cya.jpg */,
+				D38E59DA1D1B673700E22B77 /* ExitViewController.swift */,
 			);
 			path = ShivanisBachelorette;
 			sourceTree = "<group>";
@@ -114,6 +132,7 @@
 				TargetAttributes = {
 					D3284DD41D10B94200C262F3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5VE484HZJR;
 					};
 				};
 			};
@@ -140,8 +159,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38E59D91D1B454500E22B77 /* shivi_cheat.jpg in Resources */,
 				D3284DE31D10B94200C262F3 /* LaunchScreen.storyboard in Resources */,
+				D303F0EB1D1CA48000C1EA95 /* myrtlebeach (1).gpx in Resources */,
+				D303F0E91D1CA3D200C1EA95 /* myrtlebeach.gpx in Resources */,
 				D3284DE01D10B94200C262F3 /* Assets.xcassets in Resources */,
+				D38E59DF1D1B6D6100E22B77 /* cya.jpg in Resources */,
+				D303F0EF1D1CA63300C1EA95 /* cheat1.jpeg in Resources */,
 				D3284DEF1D1189C400C262F3 /* welcomePhoto.jpg in Resources */,
 				D3284DDE1D10B94200C262F3 /* Main.storyboard in Resources */,
 			);
@@ -158,6 +182,7 @@
 				D3284DF31D134B3800C262F3 /* LocationClient.swift in Sources */,
 				D3284DED1D10BDC300C262F3 /* WelcomeViewController.swift in Sources */,
 				D3284DF11D120FC900C262F3 /* Step.swift in Sources */,
+				D38E59DB1D1B673700E22B77 /* ExitViewController.swift in Sources */,
 				D3284DD91D10B94200C262F3 /* AppDelegate.swift in Sources */,
 				D3284DEB1D10BD4700C262F3 /* StepViewController.swift in Sources */,
 				D3284DF71D138EA200C262F3 /* CheatScreenViewController.swift in Sources */,
@@ -275,10 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShivanisBachelorette/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evilmcdeets.ShivanisBachelorette;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -286,10 +314,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShivanisBachelorette/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evilmcdeets.ShivanisBachelorette;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

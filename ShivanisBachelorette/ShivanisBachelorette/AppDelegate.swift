@@ -20,8 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
+        print("active")
+        LocationClient.sharedInstance.manager.startMonitoringForRegion(LocationClient.sharedInstance.airportRegion)
+        LocationClient.sharedInstance.manager.startMonitoringForRegion(LocationClient.sharedInstance.destinationRegion)
+//        performSelector(#selector(LocationClient.sharedInstance.requestStateForRegion), withObject: nil, afterDelay: 1)
         LocationClient.sharedInstance.requestStateForRegion()
+        
     }
-
+    
+//    func applicationWillResignActive(application: UIApplication) {
+//        print ("background")
+//        LocationClient.sharedInstance.manager.stopMonitoringForRegion(LocationClient.sharedInstance.airportRegion)
+//        LocationClient.sharedInstance.manager.stopMonitoringForRegion(LocationClient.sharedInstance.destinationRegion)
+//    }
 }
 
