@@ -11,7 +11,7 @@ import CoreLocation
 class LocationClient: NSObject, CLLocationManagerDelegate {
     static let sharedInstance = LocationClient()
 
-    private let airportCoordinate: CLLocationCoordinate2D  = CLLocationCoordinate2DMake(33.5620648, -86.7517764) // office(40.75384273, -73.99906660) 
+    private let airportCoordinate: CLLocationCoordinate2D  = CLLocationCoordinate2DMake(33.5620648, -86.7517764) // office(40.75384273, -73.99906660)
     private let destinationCoordinate: CLLocationCoordinate2D  = CLLocationCoordinate2DMake(33.6822,-78.9322774) // Sid(40.729753,-74.0357059) // Vandy (40.7254886,-73.8614878) // MB (33.6822,-78.9322774)
     lazy var airportRegion: CLCircularRegion = {
         return CLCircularRegion(center: self.airportCoordinate, radius: 2000, identifier: "airport")

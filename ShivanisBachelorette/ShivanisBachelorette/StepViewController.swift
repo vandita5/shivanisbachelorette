@@ -124,7 +124,7 @@ class StepViewController: UIViewController {
     }
     @IBAction func buttonTouchDown(sender: AnyObject) {
         print("action")
-        self.performSelector(#selector(overrideConditions), withObject: nil, afterDelay: 1)
+        self.performSelector(#selector(overrideConditions), withObject: nil, afterDelay: 3)
     }
     @IBAction func buttonPressed(sender: AnyObject) {
         print("pressed")
