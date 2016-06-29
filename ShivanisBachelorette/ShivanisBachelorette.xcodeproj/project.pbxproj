@@ -30,7 +30,7 @@
 		D303F0E81D1CA3D200C1EA95 /* myrtlebeach.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myrtlebeach.gpx; sourceTree = "<group>"; };
 		D303F0EA1D1CA48000C1EA95 /* myrtlebeach (1).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "myrtlebeach (1).gpx"; sourceTree = "<group>"; };
 		D303F0EE1D1CA63300C1EA95 /* cheat1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cheat1.jpeg; sourceTree = "<group>"; };
-		D3284DD51D10B94200C262F3 /* ShivanisBachelorette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShivanisBachelorette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3284DD51D10B94200C262F3 /* >.<.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ">.<.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3284DD81D10B94200C262F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3284DDA1D10B94200C262F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3284DDD1D10B94200C262F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		D3284DD61D10B94200C262F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3284DD51D10B94200C262F3 /* ShivanisBachelorette.app */,
+				D3284DD51D10B94200C262F3 /* >.<.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 			);
 			name = ShivanisBachelorette;
 			productName = ShivanisBachelorette;
-			productReference = D3284DD51D10B94200C262F3 /* ShivanisBachelorette.app */;
+			productReference = D3284DD51D10B94200C262F3 /* >.<.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -305,7 +305,7 @@
 				INFOPLIST_FILE = ShivanisBachelorette/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evilmcdeets.ShivanisBachelorette;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ">.<";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -319,7 +319,7 @@
 				INFOPLIST_FILE = ShivanisBachelorette/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evilmcdeets.ShivanisBachelorette;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ">.<";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

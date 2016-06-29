@@ -18,7 +18,8 @@ class CheatScreenViewController: UIViewController {
         dismissButton.setTitle(">.<", forState: .Normal)
         dismissButton.titleLabel!.font = UIFont.systemFontOfSize(25)
         dismissButton.backgroundColor = UIColor(red: 255/255, green: 89/255, blue: 108/255, alpha: 1)
-        reprimandText.font = UIFont.systemFontOfSize(22)
+        dismissButton.layer.cornerRadius = 10
+        reprimandText.font = UIFont.systemFontOfSize(20)
         reprimandText.editable = false
         reprimandText.userInteractionEnabled = false
     }

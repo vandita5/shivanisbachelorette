@@ -16,20 +16,16 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        for _ in 0...100 {
-//            LocationClient.sharedInstance.requestStateForRegion()
-//        }
         startButton.setTitle("Start", forState: .Normal)
         startButton.titleLabel!.font = UIFont.systemFontOfSize(25)
         startButton.backgroundColor = UIColor(red: 255/255, green: 89/255, blue: 108/255, alpha: 1)
+        startButton.layer.cornerRadius = 10
         bottomTextView.font = UIFont.systemFontOfSize(20)
         navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.translucent = true
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
-//        appNameTextView.tex
-        
     }
     
     @IBAction func startPressed(sender: AnyObject) {
@@ -38,8 +34,4 @@ class WelcomeViewController: UIViewController {
         firstStepViewController.step = Step(number: 1, text: "Pack your things. It’s time!\n*Dont forget to pack your toothbrush.", nextButtonText: "It's Friday!")
         navigationController?.pushViewController(firstStepViewController, animated: true)
     }
-
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        <#code#>
-//    }
 }

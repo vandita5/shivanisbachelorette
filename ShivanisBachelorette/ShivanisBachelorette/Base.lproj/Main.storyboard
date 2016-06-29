@@ -10,7 +10,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="ShivanisBachelorette" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -57,9 +57,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKQ-p6-GC4">
-                                <rect key="frame" x="225" y="470" width="150" height="30"/>
+                                <rect key="frame" x="225" y="445" width="150" height="55"/>
                                 <color key="backgroundColor" red="1" green="0.16775150183016974" blue="0.17400512685872138" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Pib-Jv-c0n"/>
                                     <constraint firstAttribute="width" constant="150" id="Tgc-tc-EHH"/>
                                 </constraints>
                                 <state key="normal" title="Button">
@@ -95,7 +96,7 @@
         <!--Step View Controller-->
         <scene sceneID="X3L-Zo-SZk">
             <objects>
-                <viewController storyboardIdentifier="StepViewController" id="9J3-0F-Fe7" customClass="StepViewController" customModule="ShivanisBachelorette" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepViewController" id="9J3-0F-Fe7" customClass="StepViewController" customModule="___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mgf-Vt-Nbr"/>
                         <viewControllerLayoutGuide type="bottom" id="3kY-cz-cly"/>
@@ -105,8 +106,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn5-My-z5B">
-                                <rect key="frame" x="200" y="470" width="200" height="30"/>
+                                <rect key="frame" x="200" y="445" width="200" height="55"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="cuW-E2-XXB"/>
                                     <constraint firstAttribute="width" constant="200" id="zd3-YF-rwI"/>
                                 </constraints>
                                 <state key="normal" title="Button">
@@ -173,7 +175,7 @@
         <!--Cheat Screen View Controller-->
         <scene sceneID="oNV-9Q-uJa">
             <objects>
-                <viewController storyboardIdentifier="CheatScreenViewController" id="brr-ae-Wp0" customClass="CheatScreenViewController" customModule="ShivanisBachelorette" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheatScreenViewController" id="brr-ae-Wp0" customClass="CheatScreenViewController" customModule="___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r9X-4O-Xgo"/>
                         <viewControllerLayoutGuide type="bottom" id="Mmg-1P-FST"/>
@@ -183,9 +185,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlG-lZ-x5u">
-                                <rect key="frame" x="225" y="470" width="150" height="30"/>
+                                <rect key="frame" x="225" y="445" width="150" height="55"/>
                                 <color key="backgroundColor" red="1" green="0.16775150180000001" blue="0.1740051269" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="42n-wg-ULF"/>
                                     <constraint firstAttribute="width" constant="150" id="ffy-JT-Tlm"/>
                                 </constraints>
                                 <state key="normal" title="&gt;.&lt;">
@@ -196,7 +199,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQk-ba-xG1">
-                                <rect key="frame" x="51" y="30" width="498" height="420"/>
+                                <rect key="frame" x="51" y="5" width="498" height="420"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheat1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="LdT-sx-hhD">
                                         <rect key="frame" x="50" y="8" width="398" height="290"/>
@@ -204,7 +207,7 @@
                                             <constraint firstAttribute="height" constant="290" id="PcN-QD-7LL"/>
                                         </constraints>
                                     </imageView>
-                                    <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You’ve been caught cheating. Go to the corner and think about what you’ve done!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-wh-nOl">
+                                    <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You’ve been caught cheating. GOTOTHECORNER! and think about what you’ve done!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-wh-nOl">
                                         <rect key="frame" x="99" y="303" width="300" height="115"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="oUf-xp-yB7"/>
@@ -245,7 +248,7 @@
         <!--Exit View Controller-->
         <scene sceneID="6pQ-2w-v1e">
             <objects>
-                <viewController storyboardIdentifier="ExitViewController" id="j9A-H5-OOB" customClass="ExitViewController" customModule="ShivanisBachelorette" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExitViewController" id="j9A-H5-OOB" customClass="ExitViewController" customModule="___" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PcG-dY-o4s"/>
                         <viewControllerLayoutGuide type="bottom" id="PVV-vD-zNa"/>
